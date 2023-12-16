@@ -1,5 +1,7 @@
 export const metadata = {
-  title: "About codevolution"
+  title: {
+    absolute: "About"
+  }
 }
 
 const About = () => {
