@@ -1,6 +1,7 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Products = () => {
+  let productId = 100;
   return (
     <div>
       <Link href="/">Home</Link>
@@ -8,8 +9,9 @@ const Products = () => {
       <Link href={`products/1`}>Product 1</Link>
       <Link href={`products/2`}>Product 2</Link>
       <Link href={`products/3`}>Product 3</Link>
+      <Link href={`products/${productId}`}>Product {productId}</Link>
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
