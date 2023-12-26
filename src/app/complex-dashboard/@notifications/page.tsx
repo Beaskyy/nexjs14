@@ -1,8 +1,9 @@
+import Card from '@/components/card'
 import React from 'react'
 
 const Notifications = () => {
   return (
-    <div>Notifications</div>
+    <Card>Notifications</Card>
   )
 }
 

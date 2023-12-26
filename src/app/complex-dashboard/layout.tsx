@@ -17,12 +17,12 @@ const DashboardLayout = ({
   return (
     <>
       <div>{children}</div>
-      <div className="flex">
+      <div style={{ display: "flex" }}>
         <div className="flex flex-col">
           <div>{users}</div>
           <div>{revenue}</div>
         </div>
-        <div className="flex flex-1">{notifications}</div>
+        <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
       </div>
     </>
   );

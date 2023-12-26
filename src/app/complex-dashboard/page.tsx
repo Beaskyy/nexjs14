@@ -1,9 +1,5 @@
-import React from 'react'
-
 const ComplexDashboardPage = () => {
-  return (
-    <div>Complex Dashboard Page</div>
-  )
-}
+  return <div>ComplexDashboardPage</div>;
+};
 
-export default ComplexDashboardPage
+export default ComplexDashboardPage;
