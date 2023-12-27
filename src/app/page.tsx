@@ -1,6 +1,4 @@
 import Link from "next/link";
-import "./styles/global.css"
-
 const Home = () => {
   return (
     <>
