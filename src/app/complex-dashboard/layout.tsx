@@ -1,21 +1,19 @@
-import Notifications from "@/components/notifications";
-import RevenueMetrics from "@/components/revenue-metrics";
-import UserAnalytics from "@/components/user-analytics";
-import React from "react";
-
 const DashboardLayout = ({
   children,
   users,
   notifications,
   revenue,
+  login,
 }: {
   children: React.ReactNode;
   notifications: React.ReactNode;
   revenue: React.ReactNode;
   users: React.ReactNode;
+  login: React.ReactNode;
 }) => {
-  return (
-    <>
+  const isLoggedIn = false;
+  return isLoggedIn ? (
+    <div>
       <div>{children}</div>
       <div style={{ display: "flex" }}>
         <div className="flex flex-col">
@@ -24,7 +22,9 @@ const DashboardLayout = ({
         </div>
         <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
       </div>
-    </>
+    </div>
+  ) : (
+    login
   );
 };
 
